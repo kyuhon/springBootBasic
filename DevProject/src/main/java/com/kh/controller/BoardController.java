@@ -134,4 +134,6 @@ public class BoardController {
 		log.info("params 파라미터 GET 방식 읽기");
 		return "board/read";
 	}
+	
+	//@GetMapping(value="/{boardno", produces = application/json)
 }

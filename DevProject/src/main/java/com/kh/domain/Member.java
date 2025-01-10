@@ -25,24 +25,10 @@ import lombok.ToString;
 //@EqualsAndHashCode(of="boardNo")
 //@AllArgsConstructor
 @Data
-@Builder
-public class Board {
-	public Board() {
-	}
-	
-	public Board(int boardNo, String title, String content, String writer, Date regDate) {
-		super();
-		this.boardNo = boardNo;
-		this.title = title;
-		this.content = content;
-		this.writer = writer;
-		this.regDate = regDate;
-	}
-
-	private int boardNo;
-	private String title; 
-	private String content; 
-	private String writer; 
-	private Date regDate;
+public class Member {
+	private String userId;
+	private String password;
+	private int coin;
+	private Date dateOfBirth;
 } 
 
